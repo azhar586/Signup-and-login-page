@@ -3,19 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Recipe Dashboard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="dashboard-container">
-        <h1>Welcome to Your Dashboard</h1>
-        <p>You've successfully logged in. Enjoy your stay!</p>
-        <button class="logout-btn" onclick="logout()">Logout</button>
+    <div class="container">
+        <header>
+            <h1>Recipe Dashboard</h1>
+        </header>
+
+        <section class="hero">
+            <h2>Welcome to Your Recipe Collection</h2>
+            <p>Discover and try out new delicious recipes!</p>
+        </section>
+
+        <section class="recipe-grid">
+            <div class="recipe-card">
+                <img src="images/Spaghetti%20Bolognese.jpg" alt="Recipe 1">
+                <h3>Spaghetti Bolognese</h3>
+                <p>A classic Italian pasta dish with rich meat sauce.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/grilled%20chicken.jpg" alt="Recipe 2">
+                <h3>Grilled Chicken</h3>
+                <p>Juicy and tender grilled chicken with special marinade.</p>
+                <button>View Recipe</button>
+            </div>
+
+            <div class="recipe-card">
+                <img src="images/chocolate%20cake.jpg" alt="Recipe 3">
+                <h3>Chocolate Cake</h3>
+                <p>Moist and rich chocolate cake with creamy frosting.</p>
+                <button>View Recipe</button>
+            </div>
+        
+
+        
+            <div class="recipe-card">
+                <img src="images/homemade%20pizza.jpg" alt="Featured Recipe">
+                
+                    <h3>Homemade Pizza</h3>
+                    <p>Enjoy a freshly baked pizza with homemade dough and fresh toppings.</p>
+                    <button>View Recipe</button>
+                </div>
+            
+        </section>
+
+        <footer>
+            <p>© 2025 Recipe Dashboard. All rights reserved.</p>
+        </footer>
     </div>
-    <script>
-        function logout() {
-            window.location.href = "index.html";
-        }
-    </script>
 </body>
 </html>
